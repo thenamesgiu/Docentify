@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+
+:root {
+    --bodyTextColor: #3E5426;
+    --h2AndButtonColor: #68AC23;
+    --benefitsTitleColor: #4E821A;
+    --benefitsBodyColor: #375915;
+}
+
+/*Default*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+  
+}
+/*Common CSS*/
+body{
+    background-color: #FBFAFA;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#nav-content, nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#nav-content div, #nav-content ul{
+    margin-top: 1%;
+}
+
+#nav-content img{
+    width: 46%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+
+}
+
+
+header{
+    background-color: #FBFAFA;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    box-shadow: 2px 16px 20px #00000010;
+}
+
+ul li a, a{
+    text-decoration: none;
+    color: var(--bodyTextColor);
+}
+
+ul li{
+    list-style: none;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+  
+
+}
+
+#intro{
+    display: flex;
+    width: 100%;
+    margin-top: -1%;
+}
+
+
+
+#introinfo{
+    color: var(--bodyTextColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+
+#intro aside{
+    background-image: url("../Assets/image1.png");
+    background-size: cover;
+    width: 85%;
+    
+
+}
+
+#introinfo{
+    margin-top: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 85%;
+}
+
+
+#introinfo a{
+    font-size: 165%;
+    font-weight: bold;
+    margin-top: 6%;
+}
+
+#introinfo a i{
+    margin-right: 2%;
+}
+
+#introinfo span{
+    width: 80%;
+    margin-top: 6%;
+    font-size: 175%;
+    cursor: default;
+}
+
+button{
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: var(--h2AndButtonColor);
+    border-radius: 64px;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    font-size: 115%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+
+#about{
+
+    color: var(--bodyTextColor);
+    display: flex;
+}
+
+/*#aboutimg{
+    width: 105%;
+    height: 15% ;
+    margin-right: 7%;
+}
+
+#aboutimg img{
+    width: 100%;
+    height: 100%;
+}
+
+#about h2{
+    text-align: center;
+    cursor: default;
+    
+}
+
+#aboutinfo{
+    margin-right: 4%;
+    margin-left: -3%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutinfo p{
+    font-size: 110%;
+    margin-bottom: 2%;
+    cursor: default;
+}*/
+
+#about aside{
+    background-image: url("../Assets/image2.png");
+    background-size: cover;
+    width: 100%;
+    
+
+}
+
+#aboutinfo{
+    margin-right: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+#aboutinfo p{
+    font-size: 110%;
+    margin-bottom: 2%;
+    cursor: default;
+}
+
+#about
+
+h2{
+    font-size: 175%;
+    margin-bottom: 2%;
+    color: var(--h2AndButtonColor);
+    cursor: default;
+}
+
+#benefits{
+    background-color: #D9F4BE;
+  
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+#benefits h2{
+    text-align: center;
+    margin-bottom: 1%;
+    color: var(--h2AndButtonColor);
+    cursor: default;
+}
+
+.item{
+    background-color: #90d94741;
+    color: var(--benefitsBodyColor);
+    display: flex;
+    cursor: default;
+    font-size: 100%;
+    border-radius: 16px;
+    width: 25%;
+    
+    margin-left: 2%;
+    padding: 1%;
+}
+
+
+
+.item i{
+
+    color:#90d947;
+    font-size: 180%;
+
+}
+
+.icon-border{
+    background-color: #FBFAFA;
+    border-radius: 128px;
+    height: 36%;
+    width: 356%;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-icon{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-text{
+    width: 85%;
+    margin-left: 5%;
+}
+
+.benefits-title{
+    color: var(--benefitsTitleColor);
+    font-weight: bolder;
+    margin-bottom: 2% ;
+}
+
+#benefits aside{
+    display: flex;
+    justify-content: center;
+}
+
+#possibilities h2{
+    text-align: center;
+    color: var(--h2AndButtonColor);
+    margin-bottom: 2%;
+    cursor: default;
+}
+
+#possibilities{
+    padding: 2%;
+    text-align: center;
+}
+
+#possibilities aside{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 110%;
+    color: var(--bodyTextColor);
+}
+
+#possibilities aside img{
+    width: 75%;
+    height: 75%;
+}
+
+#possibilities button{
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: var(--h2AndButtonColor);
+    border-radius: 64px;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
+    font-size: 115%;
+    margin-top: 5%;
+    width: 35%;
+    cursor: pointer;
+}
+
+.possibilities-title{
+    color: var(--bodyTextColor);
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.possibilities-text{
+    cursor: default;
+}
+
+#contact{
+    display: flex;
+}
+
+#contact aside{
+    background-image: url("../Assets/image3.png");
+    background-size: cover;
+    width: 100%;
+    
+
+}
+
+#contact h2{
+    color: var(--h2AndButtonColor);
+}
+
+
+#contactform{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+#contactform form{
+    display: flex;
+    flex-direction: column;
+}
+
