@@ -12,15 +12,15 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav >
             <div id="nav-content">
                 <div>
-                    <img src="../Assets/logo.svg" alt="Logotipo Docentify">
+                    <img class="unselectable"  draggable="false" src="../Assets/logo.svg" alt="Logotipo Docentify">
                 </div>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#contact">Nos contate</a></li>
+                <ul >
+                    <li><a class="unselectable"  draggable="false" href="#about">Sobre</a></li>
+                    <li><a class="unselectable"  draggable="false" href="#benefits">Benefícios</a></li>
+                    <li><a class="unselectable"  draggable="false" href="#contact">Nos contate</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,14 +28,14 @@
 
     <section id="intro">
      
-        <div id="introinfo">
+        <div id="introinfo" class="unselectable"  draggable="false">
           
                 <div>
-                    <img src="../Assets/logo.svg" alt="logotipo Docentify">
+                    <img  class="unselectable"  draggable="false" src="../Assets/logo.svg" alt="logotipo Docentify">
                 </div>
                 <span>O Sistema de Gerenciamento de Aprendizado <b>brasileiro</b> para o <b>Ensino brasileiro</b></span>
-                <button>Agende uma demonstração</button>
-                <a href="#about"><i class="ph ph-arrow-down"></i>Veja mais</a>
+                <button onclick="location.href='#contact'">Agende uma demonstração</button>
+                <a class="unselectable"  draggable="false" href="#about"><i class="ph ph-arrow-down"></i>Veja mais</a>
             
         </div>
   
@@ -48,20 +48,20 @@
         <aside id="aboutimg">
           
         </aside>
-        <div id="aboutinfo">
+        <div id="aboutinfo" class="unselectable"  draggable="false">
             <h2>Sobre o Docentify</h2>
             <p>Somos um time focado em propor plataformas <b>completas</b> e <b>customizáveis</b> para Instituições de Ensino ao redor do Brasil possibilitando uma centralização de conhecimento para os docentes e demais colaboradores. </p>
             <p>Oferecemos uma <b>plataforma interativa</b> que estimula a <b>sede de aprendizado</b> de seus docentes.</p>
             <p>
                 Instituições podem oferecer treinamentos e cursos próprios utilizando o Docentify como plataforma principal.</p>
-            <button>Agende uma demonstração</button>
+            <button onclick="location.href='#contact'">Agende uma demonstração</button>
         </div>
     </section>
 
-    <section id="benefits">
+    <section id="benefits" class="unselectable"  draggable="false">
         <h2>Ganhos para a sua Instituição</h2>
-        <aside>
-            <div class="item">
+        <aside >
+            <div class="item" >
                 <div class="item-icon">
                     <div class="icon-border">
                         <i class="ph ph-swatches"></i>
@@ -97,44 +97,49 @@
         </aside>
     </section>
 
-    <section id="possibilities">
+    <section id="possibilities" class="unselectable"  draggable="false">
         <h2> Possibilidades para todos</h2>
         <aside>
-            <div class="possibilities-text">
-                <img src="../Assets/item1.svg">
+            <div class="possibilities-text" id="pos1">
+                <img src="../Assets/item1.svg" class="unselectable"  draggable="false">
                 <p class="possibilities-title">Professores</p>
                 <span>Se especialize a qualquer momento em um único lugar.</span>
             </div>
-            <div class="possibilities-text">
-                <img src="../Assets/item2.svg">
+            <div class="possibilities-text" id="pos2">
+                <img src="../Assets/item2.svg" class="unselectable"  draggable="false">
                 <p class="possibilities-title">RH e Coordenação</p>
                 <span>Monitore o progresso e uso da plataforma para controle de aproveitamento.</span>
             </div>
-            <div class="possibilities-text">
-                <img src="../Assets/item3.svg">
+            <div class="possibilities-text" id="pos3">
+                <img src="../Assets/item3.svg" class="unselectable"  draggable="false">
                 <p class="possibilities-title">Instituição de Ensino</p>
                 <span>Tenha em mãos uma plataforma customizável e cursos próprios.</span>
             </div>
         </aside>
-        <button>Agende uma demonstração</button>
+        <button onclick="location.href='#contact'">Agende uma demonstração</button>
     </section>
 
     <section id="contact">
         <aside id="contactimg"></aside>
-        <div id="contactform">
+        <div id="contactform" class="unselectable"  draggable="false">
             <div>
                 <h2>Agende uma demonstração!</h2>
                 <span>Preencha o formulário e entraremos em contato para agendar uma demonstração do sistema e mostrar o impacto positivo que pode ser causado em sua Instituição.</span>
             </div>
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="67aab7f7-12a7-412f-98e4-d3e7528ac52f">
                 <label for="nome">Nome completo*</label>
                 <input type="text" placeholder="Informe seu nome completo" name="nome" id="nome">
                 <label for="ie">Instituição de Ensino*</label>
                 <input type="text" placeholder="Informe sua Instituição de Ensino" name="ie" id="ie">
                 <label for="email">E-mail para contato*</label>
-                <input type="text" placeholder="Informe um e-mail para contato" name="email" id="email">
+                <input type="email" placeholder="Informe um e-mail para contato" name="email" id="email">
                 <label for="tel">Telefone para contato*</label>
-                <input type="text" placeholder="Informe um telefone para contato" name="tel" id="tel">
+                <input type="tel" placeholder="Informe um telefone para contato" name="tel" id="tel">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+
+                <button type="submit">Agendar demonstração</button>
             </form>
         </div>
     </section>

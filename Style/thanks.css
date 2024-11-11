@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+   background-color: #effae6;
+   
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 9;
+}
+
+#mascot img{
+    height: 85%;
+    width: 100%;
+}
+
+#mascot{
+    width: 25%;
+    
+}
+
+button{
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #68AC23;
+    border-radius: 64px;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    font-size: 115%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    color: #3E5426;
+}
+
+button:hover{
+    transition: all ease-in 0.5s;
+    background-color: #467415;
+}
+
+.unselectable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media(max-width: 480px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    aside{
+        flex-direction: column;
+       
+    }
+
+    #message{
+        width: 95%;
+        text-align: center;
+    }
+
+    
+}
